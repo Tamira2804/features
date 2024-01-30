@@ -3,7 +3,7 @@ import './RadiosWithSlidingFocus.css';
 
 const RadiosWithSlidingFocus = () => {
   return (
-    <section className="section">
+    <section className="section2">
       <form>
         <label>
           <input className="input" type="radio" name="inventor" value="bell" />
