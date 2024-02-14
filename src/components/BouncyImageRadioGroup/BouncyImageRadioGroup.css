@@ -1,0 +1,37 @@
+html {
+  background: conic-gradient(from 0.5turn at bottom center, #add8e6, #fff);
+  block-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.bouncy-image-radio-group {
+  inline-size: 80vw;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 50vh;
+  gap: 1rem;
+  border: none;
+}
+
+.bouncy-image-radio-group label {
+  cursor: pointer;
+  border-radius: 2rem;
+  background: var(--_img) 50% / cover;
+}
+
+.bouncy-image-radio-group input {
+  opacity: 1;
+}
+
+.bouncy-image-radio-group label:focus-within {
+  outline: 1px solid Highlight;
+  outline-offset: 5px;
+}
