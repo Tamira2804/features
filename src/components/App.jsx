@@ -7,11 +7,11 @@ import ModalCallback from './ModalCallBack/ModalCallBack';
 export const App = () => {
   return (
     <div>
-      {/* <ModalCallback /> */}
+      <ModalCallback />
       <BouncyImageRadioGroup />
-      {/* <Switcher />
+      <Switcher />
       <WoodenToggles />
-      <RadiosWithSlidingFocus /> */}
+      <RadiosWithSlidingFocus />
     </div>
   );
 };
