@@ -13,67 +13,66 @@ const BouncyImageRadioGroup = () => {
       <fieldset className="bouncy-image-radio-group">
         <label
           style={{
-            '--_img': 'url(https://assets.codepen.io/2585/fiddle-leaf.jpeg)',
+            '--_img': `url(${process.env.PUBLIC_URL}/images/image1.jpg)`,
           }}
         >
           <input
             type="radio"
             name="images"
-            value="Fiddle Leaf"
-            checked={selectedImage === 'Fiddle Leaf'}
+            value="image1"
+            checked={selectedImage === 'image1'}
             onChange={handleChange}
           />
         </label>
         <label
           style={{
-            '--_img': 'url(https://assets.codepen.io/2585/pink-princess.jpeg)',
+            '--_img': `url(${process.env.PUBLIC_URL}/images/image2.jpg)`,
           }}
         >
           <input
             type="radio"
             name="images"
-            value="Pink Princess"
-            checked={selectedImage === 'Pink Princess'}
+            value="image2"
+            checked={selectedImage === 'image2'}
             onChange={handleChange}
           />
         </label>
         <label
           style={{
-            '--_img':
-              'url(https://assets.codepen.io/2585/kara-eads-zcVArTF8Frs-unsplash.jpg)',
+            '--_img': `url(${process.env.PUBLIC_URL}/images/image6.jpg)`,
           }}
         >
           <input
             type="radio"
             name="images"
-            value="Monstera"
-            checked={selectedImage === 'Monstera'}
+            value="image6"
+            checked={selectedImage === 'image6'}
             onChange={handleChange}
           />
         </label>
         <label
           style={{
-            '--_img': 'url(https://assets.codepen.io/2585/pothos.jpeg)',
+            '--_img': `url(${process.env.PUBLIC_URL}/images/image4.jpg)`,
           }}
         >
           <input
             type="radio"
             name="images"
-            value="Pothos"
-            checked={selectedImage === 'Pothos'}
+            value="image4"
+            checked={selectedImage === 'image4'}
             onChange={handleChange}
           />
         </label>
         <label
           style={{
-            '--_img': 'url(https://assets.codepen.io/2585/rubber-tree.webp)',
+            '--_img': `url(${process.env.PUBLIC_URL}/images/image3.jpg)`,
           }}
         >
           <input
             type="radio"
             name="images"
-            value="Rubber Tree"
-            checked={selectedImage === 'Rubber Tree'}
+            value="image3"
+            checked={selectedImage === 'image3'}
             onChange={handleChange}
           />
         </label>
