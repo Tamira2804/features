@@ -45,7 +45,7 @@ const MenuBurgerRight = () => {
         className={`burger-menu ${isMenuActive ? 'burger-menu_active' : ''}`}
         ref={menuRef}
       >
-        <a href="#" className="burger-menu_button">
+        <a href="http" className="burger-menu_button">
           <span className="burger-menu_lines"></span>
         </a>
         <nav className="burger-menu_nav">
