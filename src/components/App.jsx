@@ -4,10 +4,12 @@
 // import BouncyImageRadioGroup from './BouncyImageRadioGroup/BouncyImageRadioGroup';
 // import ModalCallback from './ModalCallBack/ModalCallBack';
 import MenuBurgerRight from './MenuBurgerRight/MenuBurgerRight';
+import EngineButton from './EngineButton/EngineButton';
 
 export const App = () => {
   return (
     <div>
+      <EngineButton />
       <MenuBurgerRight />
       {/* <ModalCallback />
       <BouncyImageRadioGroup />
