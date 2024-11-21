@@ -6,7 +6,6 @@ const EngineButton = () => {
 
   useEffect(() => {
     const btn = document.querySelector('.engine');
-    const wrap = document.getElementById('wrapper');
 
     // Обробник кліку для кнопки
     const handleButtonClick = () => {
@@ -19,18 +18,10 @@ const EngineButton = () => {
     const handleKeyDown = e => {
       if (e.keyCode === 38) {
         // Клавіша "вгору"
-        setRotation(prevRotation => {
-          const newRotation = prevRotation + 5;
-          wrap.style.transform = `rotateX(${newRotation}deg) translateY(-110px)`;
-          return newRotation;
-        });
+        setRotation(prevRotation => prevRotation + 5);
       } else if (e.keyCode === 40) {
         // Клавіша "вниз"
-        setRotation(prevRotation => {
-          const newRotation = prevRotation - 5;
-          wrap.style.transform = `rotateX(${newRotation}deg) translateY(-110px)`;
-          return newRotation;
-        });
+        setRotation(prevRotation => prevRotation - 5);
       }
     };
 
@@ -47,7 +38,10 @@ const EngineButton = () => {
 
   return (
     <div id="perspective">
-      <div id="wrapper">
+      <div
+        id="wrapper"
+        style={{ transform: `rotateX(${rotation}deg) translateY(-110px)` }}
+      >
         <div class="outer-black">
           <div class="outer-iron">
             <div class="glare"></div>
